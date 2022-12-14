@@ -1,0 +1,36 @@
+USE THIS FOLDER TO STORE DATABASE SCHEMAS
+
+Supplier {
+  firstName
+  lastName
+  phoneNo
+  email
+  bio
+  productID
+}
+
+Farmers {
+  firstName
+  lastName
+  phoneNo
+  email
+  bio
+}
+
+Worker {
+  firstName
+  lastName
+  phoneNo
+  email
+  bio
+}
+
+Suplier - Farmer
+productType -> productTypeName
+Products -> Name,Cost(per/hrs), productTypeID, Description,SupplierID, isActive, inUse
+ProductOrders -> ProductID,FarmerID,Duration,Status,Date, accepted
+
+Farmer - Worker
+jobType -> jobTypeName
+Jobs-> FarmerID, jobTypeID, Description, Duration, Pay, Date, isActive
+JobOffers -> WorkerID, JobID, accepted

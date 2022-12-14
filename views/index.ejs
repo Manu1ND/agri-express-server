@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <h1>Sign in</h1>
+    <form action="" id="loginForm">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in with your phone number</h3>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <label for="userType">Choose user type:</label>
+            <select id="userType" name="userType">
+              <option value="farmer">Farmer</option>
+              <option value="supplier">Supplier</option>
+              <option value="worker">Worker</option>
+            </select
+
+            <br><br><br><br>
+              
+            <!-- phoneNo -->
+            <label for="phoneNo">Your phone no</label>
+            <input type="text" placeholder="Enter mobile no" name="phoneNo" required>
+
+            <br><br>
+
+            <!-- Submit button -->
+             <button type="submit">Login</button>
+        </div>
+    </form>
+    
+    <script src="/js/app.js"></script>
+  </body>
+</html>
